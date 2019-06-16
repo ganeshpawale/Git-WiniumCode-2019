@@ -15,7 +15,7 @@ public class NotePad {
 		option.setApplicationPath("C:\\Windows\\System32\\notepad.exe");
 		WiniumDriver driver =new WiniumDriver(new URL("http://localhost:9999"),option);
 		Thread.sleep(5000);
-		driver.findElement(By.id("15")).sendKeys("my name is Jai Ganesh");
+		driver.findElement(By.id("15")).sendKeys("my name is Jai Ganesh");//Find textbox for put value
 		
 
 	}
