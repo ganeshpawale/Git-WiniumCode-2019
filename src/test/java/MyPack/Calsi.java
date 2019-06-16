@@ -18,7 +18,7 @@ public class Calsi {
       driver.findElement(By.name("7")).click(); //Find seven digit button
       driver.findElement(By.name("Add")).click(); //Find add digit button
       driver.findElement(By.name("5")).click(); //Find Five digit button
-      driver.findElement(By.name("Equals")).click();
+      driver.findElement(By.name("Equals")).click(); //Find Equal digit button
       Thread.sleep(5000);
       String total = driver.findElement(By.id("150")).getAttribute("Name");
       System.out.println("Total value is :: "+ total);
