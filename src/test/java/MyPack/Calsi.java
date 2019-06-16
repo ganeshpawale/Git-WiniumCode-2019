@@ -16,8 +16,8 @@ public class Calsi {
       WiniumDriver driver =new WiniumDriver(new URL("http://localhost:9999"), option);
       Thread.sleep(5000); 
       driver.findElement(By.name("7")).click(); //Find seven digit button
-      driver.findElement(By.name("Add")).click();
-      driver.findElement(By.name("5")).click();
+      driver.findElement(By.name("Add")).click(); //Find add digit button
+      driver.findElement(By.name("5")).click(); //Find Five digit button
       driver.findElement(By.name("Equals")).click();
       Thread.sleep(5000);
       String total = driver.findElement(By.id("150")).getAttribute("Name");
