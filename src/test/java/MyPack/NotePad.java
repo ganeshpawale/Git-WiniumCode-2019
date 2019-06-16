@@ -11,7 +11,7 @@ public class NotePad {
 
 	public static void main(String[] args) throws InterruptedException, MalformedURLException {
 		
-		DesktopOptions option =new DesktopOptions();
+		DesktopOptions option =new DesktopOptions();//DesktopOtions is class
 		option.setApplicationPath("C:\\Windows\\System32\\notepad.exe");
 		WiniumDriver driver =new WiniumDriver(new URL("http://localhost:9999"),option);
 		Thread.sleep(5000);
